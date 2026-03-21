@@ -1,0 +1,2 @@
+LIBNAME:=VexLibrary
+VERSION:=0.1.0

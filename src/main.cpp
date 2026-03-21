@@ -1,10 +1,11 @@
 #include "main.h"
-#include "Lib.h" // IWYU: keep
 
+// include the library
+#include "VexLibrary/Lib.hpp" // IWYU: keep
 
 void initialize() {
-	pros::lcd::initialize();
-	pros::lcd::set_text(1, "Hello PROS User!");
+  pros::lcd::initialize();
+  pros::lcd::set_text(1, "Hello PROS User!");
 }
 
 void disabled() {}
@@ -15,8 +16,8 @@ void autonomous() {}
 
 void opcontrol() {
 
-	while (true) {
-		
-		pros::delay(Lib::DELAY);                               // Run for 20 ms then update
-	}
+  while (true) {
+
+    pros::delay(Lib::DELAY);
+  }
 }
