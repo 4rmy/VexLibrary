@@ -13,6 +13,7 @@ bool auton();
 
 // utilities
 #include "utils/pose.hpp" // position + heading
+#include "utils/tracking_wheel.hpp" // tracking wheels
 
 // sub systems
 #include "subs/pid.hpp" // PID controller
