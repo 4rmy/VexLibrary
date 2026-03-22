@@ -12,6 +12,7 @@ void auton();
 } // namespace Lib
 
 // utilities
+#include "extras/wheels.hpp"        // wheel sizes
 #include "utils/pose.hpp"           // position + heading
 #include "utils/tracking_wheel.hpp" // tracking wheels
 
