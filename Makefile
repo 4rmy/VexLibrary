@@ -21,7 +21,7 @@ IS_LIBRARY:=1
 
 EXCLUDE_SRC_FROM_LIB+=$(foreach file, $(SRCDIR)/main,$(foreach cext,$(CEXTS),$(file).$(cext)) $(foreach cxxext,$(CXXEXTS),$(file).$(cxxext)))
 
-TEMPLATE_FILES=$(INCDIR)/$(LIBNAME)/*.hpp $(INCDIR)/$(LIBNAME)/subs/*.hpp
+TEMPLATE_FILES=$(INCDIR)/$(LIBNAME)/*.hpp $(INCDIR)/$(LIBNAME)/subs/*.hpp $(INCDIR)/$(LIBNAME)/utils/*.hpp
 
 .DEFAULT_GOAL=quick
 
