@@ -1,3 +1,5 @@
+#pragma once
+
 namespace Lib {
 namespace Omni {
 constexpr float NEW_2 = 2.125;

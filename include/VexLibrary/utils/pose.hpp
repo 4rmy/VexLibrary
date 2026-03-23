@@ -1,3 +1,5 @@
+#pragma once
+
 namespace Lib {
 class Pose {
 protected:

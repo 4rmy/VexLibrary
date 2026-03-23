@@ -11,10 +11,13 @@ void auton();
 
 } // namespace Lib
 
+// misc
+#include "misc/wheels.hpp"        // wheel sizes
+
 // utilities
-#include "extras/wheels.hpp"        // wheel sizes
 #include "utils/pose.hpp"           // position + heading
 #include "utils/tracking_wheel.hpp" // tracking wheels
+#include "utils/chassis.hpp"
 
 // sub systems
 #include "subs/pid.hpp" // PID controller
