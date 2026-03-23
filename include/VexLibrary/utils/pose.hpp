@@ -3,16 +3,16 @@
 namespace Lib {
 class Pose {
 protected:
-  float x;     /// x position
-  float y;     /// y position
-  float theta; /// heading angle
+  float x;      /// x position
+  float y;      /// y position
+  double theta; /// heading angle
 
 public:
   /// settings struct for default constructor values
   struct settings {
     float x = 0;
     float y = 0;
-    float theta = 0;
+    double theta = 0;
   };
 
   /// Pose contructor
@@ -23,7 +23,7 @@ public:
   /// @brief set the y value
   void set_y(float y);
   /// @brief set the theta value
-  void set_theta(float theta);
+  void set_theta(double theta);
   /// @brief set the pose using settings
   void set_pose(settings s);
 
@@ -36,8 +36,8 @@ public:
   /// @brief shorthand get_y
   inline float Y() const { return this->get_y(); }
   /// @brief get the theta value
-  float get_theta() const;
+  double get_theta() const;
   /// @brief shorthand get_theta
-  inline float T() const { return this->get_theta(); }
+  inline double T() const { return this->get_theta(); }
 };
 } // namespace Lib

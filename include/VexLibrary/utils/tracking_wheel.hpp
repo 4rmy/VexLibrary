@@ -33,5 +33,7 @@ public:
                           .dist = s.dist,
                           .angle = (float)(90. * ((s.reversed) ? -1 : 1))});
   }
+
+  int get_pos() const { return this->encoder->get_position(); }
 };
 } // namespace Lib
